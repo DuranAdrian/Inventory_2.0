@@ -1,4 +1,4 @@
-#Inventory_2.0
+# Inventory_2.0
 
 This project is my first functional, although a bit buggy at times, personal iOS project that was started by attempting to solve my simple inventory tracking needs.
 
@@ -15,5 +15,19 @@ I decided to leave this project as it is as a testament to my continuing softwar
 
 Side note: I had a bit of local technical issue with Inventory_1.0 and decided to create Inventory_2.0.
 
+## ScreenShots
 
+**Home Screen**
 <img src="https://github.com/DuranAdrian/Inventory_2.0/blob/master/Inventory_2.0/Screenshots/Home_Screen.png" width="300">
+
+**New Item**
+<img src="https://github.com/DuranAdrian/Inventory_2.0/blob/master/Inventory_2.0/Screenshots/Add_New_Item.png" width="300">
+
+**Item Details**
+<img src="https://github.com/DuranAdrian/Inventory_2.0/blob/master/Inventory_2.0/Screenshots/Item_Details.png" width="300">
+
+**Items List**
+<img src="https://github.com/DuranAdrian/Inventory_2.0/blob/master/Inventory_2.0/Screenshots/Item_List.png" width="300">
+
+**Folder View**
+<img src="https://github.com/DuranAdrian/Inventory_2.0/blob/master/Inventory_2.0/Screenshots/Category_Folders.png" width="300">
