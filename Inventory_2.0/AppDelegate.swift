@@ -10,12 +10,37 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate, NSFetchedResultsControllerDelegate {
+    
+    var items: [ItemMO] = []
+    var customFolders: [FolderMO] = []
+    var categoryFolders: [FolderMO] = []
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        print("Hello from didFinishLaunchingWithOptions")
+        
+        // Pull data before launching
+//        var fetchedItemsResultsController: NSFetchedResultsController<ItemMO>
+//        let itemFetchRequest: NSFetchRequest<ItemMO> = ItemMO.fetchRequest()
+//        let sortDescriptor = NSSortDescriptor(key: "name", ascending: false)
+//        itemFetchRequest.sortDescriptors = [sortDescriptor]
+//
+//        let managedContext = self.persistentContainer.viewContext
+//        fetchedItemsResultsController = NSFetchedResultsController(fetchRequest: itemFetchRequest, managedObjectContext: managedContext, sectionNameKeyPath: nil, cacheName: nil)
+//        fetchedItemsResultsController.delegate = self as! NSFetchedResultsControllerDelegate
+//        do {
+//            try fetchedItemsResultsController.performFetch()
+//            if let fetchedObjects = fetchedItemsResultsController.fetchedObjects {
+//                print("Successful item fetch")
+//                items = fetchedObjects
+//            }
+//        } catch {
+//            print("ERROR FETCHING ITEMS: \(error)")
+//        }
+//
+        
         return true
     }
 

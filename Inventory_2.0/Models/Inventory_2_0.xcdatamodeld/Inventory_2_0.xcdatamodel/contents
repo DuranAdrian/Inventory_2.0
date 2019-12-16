@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="CategoryMO" syncable="YES" codeGenerationType="class">
+        <attribute name="category" attributeType="Transformable" customClassName="[String]"/>
+    </entity>
+    <entity name="Folder" representedClassName="FolderMO" syncable="YES">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="tag" optional="YES" attributeType="String"/>
+        <relationship name="contents" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="folders" inverseEntity="Item"/>
+    </entity>
+    <entity name="Item" representedClassName="ItemMO" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="image" attributeType="Binary"/>
+        <attribute name="isFavorite" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="quantity" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES"/>
+        <attribute name="value" attributeType="Decimal" defaultValueString="0.0"/>
+        <relationship name="folders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Folder" inverseName="contents" inverseEntity="Folder"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-36" positionY="54" width="128" height="58"/>
+        <element name="Folder" positionX="-54" positionY="36" width="128" height="103"/>
+        <element name="Item" positionX="-63" positionY="-18" width="128" height="163"/>
+    </elements>
+</model>
