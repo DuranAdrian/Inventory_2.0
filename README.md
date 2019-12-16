@@ -2,7 +2,7 @@ This project is my first functional, although a bit buggy at times, personal iOS
 Using Core Data, TableViews, CollectionViews, Storyboard, Protocols, a third party plugin [Charts](https://github.com/danielgindi/Charts) and an online tutorial for [cloud tags](https://iostutorialjunction.com/2017/10/create-tag-clouds-view-in-swift-tutorial.html) I was able to create an app that was able to suit my needs. Although there are other Inventory iOS apps out there, I decided to create my own for the challenge and to learn more about iOS Development. 
 
 The app contains the following core features:
-..* Create new items
+* Create new items
 ..* View an item's details
 ..* Custom folders
 ..* Add items to custom folders
