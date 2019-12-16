@@ -13,7 +13,7 @@ The app contains the following core features:
 
 I decided to leave this project as it is as a testament to my continuing software development skills. I hope to one day be able to come back to this app in the future and see how far I've come and possiblely rebuild it with skills I have learned.
 
-Side note: I had a bit of local technical issue with Inventory_1.0 and decided to create Inventory_2.0.
+Side note: I had a bit of local technical issue with Inventory_1.0 and decided to create Inventory_2.0 hence the name.
 
 ## ScreenShots
 
